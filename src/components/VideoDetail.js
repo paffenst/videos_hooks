@@ -4,17 +4,19 @@ const VideoDetail = ({ video }) => {
     if (!video) {
         <div>Loading...</div>
     }
-  //  const videoSrc = ``;
-
+   // const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
     return (
         <div>
-            <div className="ui embed">
-             
+        <div className="ui embed"> 
+        <iframe title="video player"/>
+        </div>
+        <div>
+            <div className="ui segment">
+            <h4 className="ui header">{}</h4>          
             </div>
-
+        </div>
         </div>
     );
-   // return <div>{video.snippet.title}</div>
-};
+}
 
 export default VideoDetail;
